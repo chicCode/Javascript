@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Javascript 문법 정리 -->
+    <!-- html에서의 주석은 다음과 같이 처리합니다. -->
+    <script>
+        // Javascript에서의 주석은 다음과 같이 처리합니다.
+        // 1. 상수 선언 => const 사용.
+        const pi = 3.14
+
+        // 2. 변수 선언 => let 사용.
+        let a = 2
+
+        // 3. 출력에는 두 가지 종류가 있음. 
+        // 첫번째로, 콘솔 창에서의 출력
+        console.log("경고문입니다.")
+        // 두번째로, 경고문을 활용한 출력
+        alert("경고문입니다.")
+
+        // 4. 사용자로부터 정보를 입력받음.
+        // 첫번째로, PYTHON에서의 input과 같이 string형태로 입력받음.
+        let input = prompt("입력받으실 문자열을 입력하세요.")
+        
+        /* 두번째로, bool형식의 데이터를 입력받음. 
+        bool 형식의 데이터 필요성은 다음 예시를 통해서 생각해볼 수 있음.
+        웹에서 무언가를 입력받아서 확인(True) 혹은 취소(False)로 상호작용함.
+        */ 
+        let input = confirm("진짜입니까...?")
+
+        // 5. 자료형의 변환
+        // Number(), String(), Boolean()의 함수를 활용해서 자료형의 변환을 함.
+
+        // 6. 조건문
+        let num = 4
+        if(num>2) 
+        {alert("2보다 큽니다.")}
+        else
+        {alert("2보다 작습니다.")} 
+
+        // 7. Switch문
+        let temp = Number(prompt("아무 숫자나 입력해주세요."))
+        switch(temp)
+        {
+            case 1:
+                alert(`${temp}입니다.`)
+                break
+            case 2:
+                alert(`${temp}입니다.`)
+                break
+            case 3:
+                alert(`${temp}입니다.`)
+                break
+            default:
+                alert("1~3이 아닙니다.")
+        }
+
+        // 8. 배열(Array)
+
+        // 배열 선언함.
+        const arr = [1,2,3,4,5]
+
+        // 배열 제일 뒤에 push함.
+        arr.push(6)
+
+        // 배열 중간에 추가함.
+        // 배열.splice(인덱스,0,요소)
+        arr.splice(0,0,0)
+        
+        // 배열에서 값을 제거함.
+        // 배열.splice(인덱스,1)
+        arr.splice(2,1)
+
+        // 특정 값의 인덱스를 반환함. 없으면 -1
+        arr.indexOf(1)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
